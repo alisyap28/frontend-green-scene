@@ -1,0 +1,36 @@
+body {
+  font-family: sans-serif;
+  background-color: rgb(226, 234, 241);
+}
+
+h1 {
+  color: rgb(52, 57, 59);
+}
+
+p {
+  color: rgb(52, 57, 59);
+}
+
+.container {
+  padding-left: 16rem;
+  padding-right: 16rem;
+}
+
+.card {
+  background-color: white;
+  padding: 2rem;
+  margin-top: 5rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 0.5rem;
+}
+
+#deteksi {
+  margin-top: 1rem;
+  background-color: rgb(75, 202, 107);
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 0.2rem;
+  padding: 1rem 2rem 1rem 2rem;
+  cursor: pointer;
+}
