@@ -4,37 +4,112 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Green Scene</title>
+    <title>Document</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="card">
-        <div>
-          <h1>Green Scene</h1>
+    <nav>
+      <h2>Green Scene</h2>
+      <ul>
+        <li>
+          <a href="./index.html">Home</a>
+        </li>
+        <li>
+          <a href="./detect.html">Detect</a>
+        </li>
+      </ul>
+    </nav>
+    <section id="hero-image">
+      <div>
+        <h1>Green Scene</h1>
+        <p>
+          Selamat datang di Green Scene! mari bersama sama wujudkan lingkungan
+          yang hijau dan asri.
+        </p>
+        <button class="button">
+          <a href="./detect.html"> Coba Produk </a>
+        </button>
+      </div>
+    </section>
+
+    <section id="about-us-container" class="container">
+      <div class="content-container">
+        <h1>Tentang Kami</h1>
+        <p>
+          Green Scene merupakan web aplikasi yang terhubung dengan backend serta
+          model machine learning, dimana dapat mendeteksi kebersihan lingkunan
+          dari sebuah gambar. Silahkan upload file pada tombol di bawah dan klik
+          "deteksi" untuk mendeteksi kebersihan lingkungan pada gambar yang
+          dikirim
+        </p>
+      </div>
+    </section>
+
+    <section id="three-grids">
+      <h1>Solusi Kami</h1>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+      <div class="container">
+        <div class="grid-container">
+          <div class="grid-item">
+            <h2>Selamatkan Lingkungan</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+              beatae veritatis adipisci, molestias ipsam obcaecati expedita
+              cumque reiciendis eaque optio velit minima quaerat. Eum
+              repellendus nisi ipsam, vel commodi nostrum?
+            </p>
+          </div>
+          <div class="grid-item">
+            <h2>Manfaatkan Teknologi</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+              beatae veritatis adipisci, molestias ipsam obcaecati expedita
+              cumque reiciendis eaque optio velit minima quaerat. Eum
+              repellendus nisi ipsam, vel commodi nostrum?
+            </p>
+          </div>
+          <div class="grid-item">
+            <h2>Selamatkan Dunia</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+              beatae veritatis adipisci, molestias ipsam obcaecati expedita
+              cumque reiciendis eaque optio velit minima quaerat. Eum
+              repellendus nisi ipsam, vel commodi nostrum?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="profile-grid">
+      <h1>Profil Kami</h1>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+      <div class="grid-container">
+        <div class="grid-item override-rm-shadow">
+          <img class="profile-pic" src="./assets/livia-drusilla.jpg" />
+          <h2>Alisya</h2>
           <p>
-            Green Scene merupakan web aplikasi yang terhubung dengan backend
-            serta model machine learning, dimana dapat mendeteksi kebersihan
-            lingkunan dari sebuah gambar. Silahkan upload file pada tombol di
-            bawah dan klik "deteksi" untuk mendeteksi kebersihan lingkungan pada
-            gambar yang dikirim
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla
+            neque minus suscipit enim quasi, deserunt ullam vero corporis
+            placeat, veniam temporibus nisi officiis, a asperiores accusantium
+            veritatis dolorem obcaecati atque.
           </p>
         </div>
-        <img id="previewgambar" />
-        <br />
-        <input id="gambar" type="file" onchange="getBase64Image(this)" />
-        <br />
-        <div id="hasil"></div>
-        <br />
-        <button id="deteksi">DETEKSI</button>
+        <div class="grid-item override-rm-shadow">
+          <img class="profile-pic" src="./assets/caracalla.jpg" />
+          <h2>Fadli</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla
+            neque minus suscipit enim quasi, deserunt ullam vero corporis
+            placeat, veniam temporibus nisi officiis, a asperiores accusantium
+            veritatis dolorem obcaecati atque.
+          </p>
+        </div>
       </div>
-    </div>
+    </section>
 
     <footer>
       <div><p>&copy; Green Scene Team for Dicoding Capstone Project</p></div>
     </footer>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script defer src="./image.js"></script>
   </body>
 </html>

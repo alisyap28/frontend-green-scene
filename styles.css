@@ -2,6 +2,15 @@ body {
   font-family: sans-serif;
   background-color: rgb(226, 234, 241);
   margin: 0;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
 }
 
 h1 {
@@ -12,10 +21,51 @@ p {
   color: rgb(52, 57, 59);
 }
 
+nav {
+  background-color: #fff;
+  position: fixed;
+  width: 100vw;
+}
+
+nav h2 {
+  display: inline-block;
+  margin-left: 5rem;
+}
+
+nav ul {
+  display: inline-block;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+nav a {
+  font-style: normal;
+  text-decoration: none;
+}
+
 .container {
   width: 100vw;
   display: flex;
   justify-content: center;
+}
+
+.content-container {
+  margin: 4rem 20rem;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1100px) {
+  .content-container {
+    margin: 0 5rem 0 5rem;
+    text-align: center;
+  }
+}
+
+.content-container p {
+  margin: 0;
 }
 
 .card {
@@ -25,6 +75,17 @@ p {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   border-radius: 0.5rem;
   width: 46rem;
+}
+
+.button {
+  margin-top: 1rem;
+  background-color: rgb(75, 202, 107);
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 0.2rem;
+  padding: 1rem 2rem 1rem 2rem;
+  cursor: pointer;
 }
 
 #deteksi {
@@ -52,5 +113,95 @@ footer {
 }
 
 footer p {
+  text-align: center;
+}
+
+#hero-image {
+  height: 90vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("./assets/background-image.jpg");
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#hero-image div {
+  text-align: center;
+  text-shadow: 2px 2px #00000050;
+}
+
+#hero-image div h1 {
+  color: #fff;
+  font-size: 5em;
+  margin: 0;
+}
+
+#hero-image div p {
+  margin: 0;
+  color: #fff;
+}
+
+.grid-container {
+  display: flex;
+  gap: 2rem;
+  margin: 0 6rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 800px) {
+  .grid-container {
+    flex-direction: column;
+  }
+}
+
+.grid-item {
+  padding: 1rem 4rem;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 0.5rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.override-rm-shadow {
+  box-shadow: none;
+}
+
+.profile-pic {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+#profile-grid {
+  padding: 4rem 8rem;
+  background-color: #fff;
+}
+
+@media (max-width: 800px) {
+  #profile-grid {
+    padding: 8rem 0;
+  }
+}
+
+section h1 {
+  text-align: center;
+}
+
+section p {
+  text-align: center;
+}
+
+#three-grids {
+  margin-top: 4rem;
+  padding: 4rem 0;
+  background-color: #fff;
+}
+
+.center {
   text-align: center;
 }

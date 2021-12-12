@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Green Scene</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <nav>
+      <h2>Green Scene</h2>
+      <ul>
+        <li>
+          <a href="./index.html">Home</a>
+        </li>
+        <li>
+          <a href="./detect.html">Detect</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="container">
+      <div class="card">
+        <div>
+          <h1>Green Scene</h1>
+          <p>
+            Green Scene merupakan web aplikasi yang terhubung dengan backend
+            serta model machine learning, dimana dapat mendeteksi kebersihan
+            lingkunan dari sebuah gambar. Silahkan upload file pada tombol di
+            bawah dan klik "deteksi" untuk mendeteksi kebersihan lingkungan pada
+            gambar yang dikirim
+          </p>
+        </div>
+        <img id="previewgambar" />
+        <br />
+        <input id="gambar" type="file" onchange="getBase64Image(this)" />
+        <br />
+        <div id="hasil"></div>
+        <br />
+        <button id="deteksi">DETEKSI</button>
+      </div>
+    </div>
+
+    <footer>
+      <div><p>&copy; Green Scene Team for Dicoding Capstone Project</p></div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./image.js"></script>
+  </body>
+</html>
