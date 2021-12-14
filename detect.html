@@ -9,13 +9,13 @@
   </head>
   <body>
     <nav>
-      <h2>Green Scene</h2>
+      <h2><a href="./index.html">Green Scene</a></h2>
       <ul>
         <li>
           <a href="./index.html">Home</a>
         </li>
         <li>
-          <a href="./detect.html">Detect</a>
+          <a class="nav-active" href="./detect.html">Detect</a>
         </li>
       </ul>
     </nav>
@@ -44,6 +44,44 @@
     <footer>
       <div><p>&copy; Green Scene Team for Dicoding Capstone Project</p></div>
     </footer>
+
+    <div class="popup hidden" id="popup-dirty">
+      <div class="popup-overlay"></div>
+      <div class="popup-container">
+        <div class="popup-photo-container">
+          <img src="./assets/process.png" />
+        </div>
+        <div class="popup-content-container">
+          <h1>Sampah</h1>
+          <p>
+            Om Swastyastu. Lorem ipsum dolor, sit amet consectetur adipisicing
+            elit. Libero pariatur facere, ratione voluptatibus fuga cumque quas
+            repellat ad possimus, tempore nemo unde, ab porro officiis nulla
+            maiores asperiores? Om Santhi Santhi Santhi Om.
+          </p>
+          <button class="button popup-button">Okay</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup hidden" id="popup-clean">
+      <div class="popup-overlay"></div>
+      <div class="popup-container">
+        <div class="popup-photo-container">
+          <img src="./assets/process.png" />
+        </div>
+        <div class="popup-content-container">
+          <h1>Bersih</h1>
+          <p>
+            Om Swastyastu. Lorem ipsum dolor, sit amet consectetur adipisicing
+            elit. Libero pariatur facere, ratione voluptatibus fuga cumque quas
+            repellat ad possimus, tempore nemo unde, ab porro officiis nulla
+            maiores asperiores? Om Santhi Santhi Santhi Om.
+          </p>
+          <button class="button popup-button">Okay</button>
+        </div>
+      </div>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script defer src="./image.js"></script>

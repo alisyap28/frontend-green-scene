@@ -5,6 +5,10 @@ var input = $("#gambar");
 var imagePreview = $("#previewgambar");
 var resultContainer = $("#hasil");
 var selectedImage;
+var sampahButton = $(".popup-button");
+
+var dirtyPopup = $("#popup-dirty");
+var cleanPopup = $("#popup-clean");
 
 function getBase64Image(element) {
   var file = element.files[0];
@@ -25,8 +29,10 @@ async function onGetResponseFromBackend(data) {
   console.log(parsedData);
   if (parsedData == 1) {
     resultContainer.html("<p>hasil: kotor</p>");
+    dirtyPopup.removeClass("hidden");
   } else {
     resultContainer.html("<p>hasil: bersih</p>");
+    cleanPopup.removeClass("hidden");
   }
 }
 
@@ -43,4 +49,8 @@ button.click(function () {
     contentType: "application/json",
     complete: onGetResponseFromBackend,
   });
+});
+
+sampahButton.click(function (e) {
+  $(this).closest(".popup").addClass("hidden");
 });
