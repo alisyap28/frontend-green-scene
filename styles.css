@@ -396,3 +396,29 @@ footer {
 #text-footer p {
   color: #fff;
 }
+
+
+.h1new {
+  color : white;
+  padding-left: 23%;
+  padding-right: 23%;
+  text-align: justify;
+   
+}
+.justify {
+  text-align: justify;
+}
+
+.paddedleft {
+  padding-left: 40%;
+}
+
+.profile-pic2 {
+  width: 20rem;
+  height: 15rem;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 1rem;
+  border-style:solid;
+
+}
