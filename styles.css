@@ -300,7 +300,6 @@ footer p {
   background-color: #fff;
   text-align: center;
   border-radius: 0.5rem;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .override-rm-shadow {
@@ -337,7 +336,7 @@ section p {
 #three-grids {
   margin-top: 4rem;
   padding: 4rem 0;
-  background-color: #143616;
+  background-color: #3aa344;
 }
 
 #grid-title,
@@ -352,6 +351,7 @@ section p {
 .three-grid-text p {
   color: #fff;
 }
+
 .center {
   text-align: center;
 }
@@ -387,4 +387,12 @@ section p {
   height: 2rem;
   object-fit: contain;
   object-position: center;
+}
+footer {
+  background-color: #3aa344;
+  color: #fff;
+}
+
+#text-footer p {
+  color: #fff;
 }
